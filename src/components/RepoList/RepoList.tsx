@@ -13,7 +13,7 @@ const RepoList = (): JSX.Element => {
     <div>
       <h2>Repository list</h2>
 
-      <main>
+      <main data-testid="repo-list">
         {repos.map((repo: Node):JSX.Element => {
           return (
             <RepoItem

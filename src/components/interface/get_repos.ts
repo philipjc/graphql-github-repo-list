@@ -33,13 +33,13 @@ interface ErrorMessage {
 }
 
 export interface RepoListReturn {
-  repos: Node[]|any;
+  repos: Node[];
   error: ErrorMessage|undefined;
   loading: boolean;
 }
 
 export interface GetRepos {
-  search: Search|undefined;
+  search: Search;
   pageInfo: object;
   edges: [Repo];
   feed: [];
